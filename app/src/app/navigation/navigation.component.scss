@@ -1,0 +1,119 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+  background:rgb(48, 48, 103);
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  background: rgb(57, 172, 57);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.btnProducto-a{
+  color: aliceblue;
+}
+
+//BOTON LOGIN
+
+.btnLogin {
+  font-size: 18px;
+  justify-content: flex-end;
+  color:black;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: fixed;
+  // vertical-align: 30px;
+  right: 30px;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+
+// BOTON HOME
+
+
+.home {
+  font-size: 17px;
+  position: fixed;
+  left: 82%;
+  cursor: pointer;
+  color:black;
+  font-family: inherit;
+  font-weight: 800;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+ }
+
+ //BOTON QUIENES SOMOS
+
+
+ .QuienesSomos{
+  font-size: 17px;
+  position: fixed;
+  left: 70%;
+  cursor: pointer;
+  color:black;
+  font-family: inherit;
+  font-weight: 800;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+ }
+
+ button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: aqua;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+ button:focus,
+button:hover {
+  color: aliceblue;
+}
+
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.btnProducto-a:focus::after,
+.btnProducto-a:focus,
+.btnProducto-a:hover
+.btnProducto-a:hover:after{
+  width: 100%;
+  left: 0%;
+  color: aliceblue;
+}
+
